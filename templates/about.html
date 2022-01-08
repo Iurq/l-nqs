@@ -47,10 +47,19 @@ tr:nth-child(even) {
 </style>
 
 <form method = "POST">
-  <label for="url">Type the URL you want shortened : </label>
+  <h2 for="url">Type the URL you want shortened : </h2>
+  <hr>
   <input type="url" id="url" name="url"><br><br>
-  <input type="submit">
+  <input type="submit", name="submit_button", value="submitted">
 </form>
+<p>Your link :</p>
+<script src="jquery.js"></script>
+<script>
+$(function(){
+  $("#includedContent").load(window.location.pathname + "2");
+});
+</script>
+<div id="includedContent"></div>
 
 <!--
 <h3>About Us.</h3>
